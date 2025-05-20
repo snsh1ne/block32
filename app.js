@@ -46,4 +46,9 @@ app.post("/employees", (req, res) => {
   return res.status(201).json(newEmployee);
 });
 
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).send("Sorry, it's not you, it's me :(");
+});
+
 export default app;
