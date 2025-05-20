@@ -28,7 +28,7 @@ app.route("/employees/:id").get((req, res) => {
 });
 
 app.post("/employees", (req, res) => {
-  if (!req.body || !req.body.name || typeof req.body.name !== "string" || req.body.name.trim() === "") {
+  if (!req.body) {
     return res.status(400).json({
       error: "Invalid request",
       message: "Request must include a non-empty 'name' string"
