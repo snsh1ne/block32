@@ -1,14 +1,26 @@
 {
   "name": "employee-directory-v2",
-  "main": "server.js",
+  "version": "1.0.0",
+  "description": "The organization is pleased with your work in creating the proof-of-concept employee-management API.\r Take your work to the next level by adding middleware and organizing your endpoints into routers!",
+  "homepage": "https://github.com/snsh1ne/block32#readme",
+  "bugs": {
+    "url": "https://github.com/snsh1ne/block32/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snsh1ne/block32.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "imports": {
+    "#*": "./*.js"
+  },
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
     "test": "vitest"
-  },
-  "imports": {
-    "#*": "./*.js"
   },
   "dependencies": {
     "express": "^5.1.0"
